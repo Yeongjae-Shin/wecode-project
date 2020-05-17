@@ -59,7 +59,7 @@
   justify-content: space-between;
   align-items: center;
   z-index: 10000;
-  background-color: #161616;
+  /* background-color: #161616; */
 }
 
 #banner header .logo {
@@ -232,4 +232,16 @@
 
 #contact .imgBx img:hover {
   opacity: 1;
+}
+
+#game {
+  background: #161616;
+  text-align: center;
+  padding: 50px;
+}
+
+canvas {
+  background: #eee;
+  display: block;
+  margin: 0 auto;
 }
