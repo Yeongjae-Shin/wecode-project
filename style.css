@@ -247,5 +247,14 @@ canvas {
 }
 
 #startbutton {
-  width: 120px;
+  font-size: 36px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  padding-top: 50px;
+  display: inline-block;
+}
+
+#startbutton:hover {
+  border-bottom: 4px solid #fff;
 }
