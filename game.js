@@ -187,4 +187,6 @@ function draw() {
   requestAnimationFrame(draw);
 }
 
-draw();
+function gameStart() {
+  draw();
+}

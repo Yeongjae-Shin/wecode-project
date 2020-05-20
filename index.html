@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>YeongJae's Profile</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -55,7 +56,10 @@
 
   <section id="game">
     <h2 class="heading">Game</h2>
-    <canvas id="myCanvas" width="1000" height="500"></canvas>
+    <div id="screen"></div>
+    <input id="startbutton" type="button" value="Click me to start" />
+    </div>
+    <canvas id="myCanvas" width="1000" height="500" style="display: none;"></canvas>
   </section>
 
   <!-- Contact -->
@@ -71,6 +75,14 @@
   </section>
 
   <script src="game.js"></script>
+  <script>
+    $("#startbutton").click(function () {
+      $("#screen").hide();
+      $("#myCanvas").show();
+      $("#startbutton").hide();
+      gameStart();
+    });
+  </script>
 </body>
 
 </html>
